@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
     int input[16384];
-    int output[2*k];
+    int output[16384];
     int gold;
     int in;
 
@@ -33,7 +33,7 @@ int main()
     
     int tf = 0;
 
-    for(int i=0; i<2*k; i++)
+    for(int i=0; i<16384; i++)
     {
         fscanf(fpo, "%d", &gold);
         if (output[i] - gold != 0)
